@@ -4,8 +4,16 @@
 ** Docs: https://tailwindcss.com/docs/configuration
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
+const colors = require('tailwindcss/colors');
+
 module.exports = {
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        ...colors,
+      },
+    },
+  },
   variants: {},
   plugins: [],
   purge: {
@@ -18,5 +26,5 @@ module.exports = {
       'plugins/**/*.js',
       'nuxt.config.js'
     ]
-  }
+  },
 }
