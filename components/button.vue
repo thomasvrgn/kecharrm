@@ -5,9 +5,16 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue, { PropOptions } from 'vue'
+
+type Buttons = 'dark' | 'light';
 
 export default Vue.extend({
-  
+  props: {
+    type: {
+      type: String,
+      required: true,
+    } as PropOptions<Buttons>,
+  }
 })
 </script>
