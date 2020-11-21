@@ -9,9 +9,9 @@
         Kecharrm is a multi-domain community built after a server gathering.
       </p>
       <div class="container flex flex-row space-x-2">
-        <button class="bg-white text-indigo-800 font-medium py-1 px-4">
+        <Button type="dark">
           Découvrir
-        </button>
+        </Button>
         <button class="text-white py-1 px-4 focus:outline-none">
           Rejoindre le discord
         </button>
@@ -19,3 +19,14 @@
     </div>
   </header>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+import Button from '~/components/button.vue'
+
+export default Vue.extend({
+  components: {
+    Button,
+  },  
+})
+</script>
