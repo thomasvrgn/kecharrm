@@ -1,6 +1,6 @@
 <template>
   <button
-    :class="{'bg-white text-indigo-800 font-medium': isDark()}"
+    :class="{'bg-white text-indigo-800 font-medium': isDark(), 'bg-indigo-800 text-white font-medium': !isDark()}"
     class="py-1 px-4"
   >
     <slot />
