@@ -12,6 +12,9 @@
         <Button type="dark">
           Découvrir
         </Button>
+        <Button type="dark" outline="true">
+          test
+        </Button>
         <button class="text-white py-1 px-4 focus:outline-none">
           Rejoindre le discord
         </button>
